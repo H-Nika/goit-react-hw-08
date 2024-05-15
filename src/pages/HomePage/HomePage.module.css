@@ -1,0 +1,15 @@
+.homepage-welcome {
+  min-height: calc(100vh - 74px);
+  display: flex;
+  margin-top: 180px;
+  justify-content: center;
+  font-size: 100px;
+  color: rgb(19, 214, 191);
+  border: 1px;
+  -webkit-text-stroke: 1px rgb(1, 1, 11);
+  animation: rainbow 5s linear infinite;
+}
+
+.homepage-welcome:hover {
+  filter: drop-shadow(10px 15px 10px yellow);
+}
