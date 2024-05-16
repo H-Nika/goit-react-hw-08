@@ -31,6 +31,9 @@ export const contactsSlice = createSlice({
         state.loading = false;
         state.items = action.payload;
       })
+      .addCase(logOut.fulfilled, () => {
+        return INITIAL_STATE;
+      })
       .addMatcher(isPending, (state, action) => {
         state.loading = true;
         state.error = null;
